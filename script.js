@@ -17,6 +17,25 @@ airports.mia = { name: "Miami", coords: {lat: 25.7959, lng: -80.2870} };
 airports.sea = { name: "Seattle-Tacoma", coords: {lat: 47.4502, lng: -122.3088} };
 airports.lax = { name: "Los Angeles", coords: {lat: 33.9416, lng: -118.4085} };
 airports.jfk = { name: "New York John F. Kennedy", coords: {lat: 40.6413, lng: -73.7781} };
+airports.rdu = { name: "Raleigh-Durham", coords: {lat: 35.8772, lng: -78.7888} };
+airports.mdw = { name: "Chicago Midway", coords: {lat: 41.7861, lng: -87.7525} };
+airports.ord = { name: "Chicago O'Hare", coords: {lat: 41.9780, lng: -87.9061} };
+airports.mke = { name: "General Mitchell", coords: {lat: 42.9469, lng: -87.9022} };
+airprots.mco = { name: "Orlando", coords: {lat: 28.4286, lng: -81.3086} };
+airports.lga = { name: "LaGuardia", coords: {lat: 40.7747, lng: -73.8719} };
+airports.ogg = { name: "Kahului", coords: {lat: 20.8922, lng: -156.4380} };
+airports.msp = { name: "Minneapolis-Saint Paul", coords: {lat: 44.8816, lng: -93.2208} };
+airports.yvr = { name: "Vancouver", coords: {lat: 49.1919, lng: -123.1813} };
+airports.san = { name: "San Diego", coords: {lat: 32.7336, lng: -117.1897} };
+airports.sjd = { name: "Los Cabos", coords: {lat: 23.155, lng: -109.725} };
+airports.puj = { name: "Punta Cana", coords: {lat: 18.5675, lng: -68.36333} };
+airports.gcm = { name: "Owen Roberts", coords: {lat: 19.2919, lng: -81.3591} };
+airports.pvr = { name: "Licenciado Gustavo Díaz Ordaz", coords: {lat: 20.68, lng:  -105.2541} };
+airports.cun = { name: "Cancún", coords: {lat: 21.03666, lng: -86.8769} };
+airports.dfw = { name: "Dallas/Fort Worth", coords: {lat: 32.8980, lng: -97.0408} };
+airports.tus = { name: "Tuscon", coords: {lat: 32.1161, lng:  -110.9411} };
+airports.slc = { name: "Salt Lake City", coords: {lat: 40.7861, lng: -111.9822} };
+
 
 // europe
 airports.aja = { name: "Corsica Ajaccio", coords: {lat: 41.9214, lng: 8.7966} };
@@ -34,6 +53,9 @@ airports.osl = { name: "Oslo Gardermoen", coords: {lat: 60.1976, lng: 11.1004} }
 airports.szg = { name: "Salzburg Wolfgang Amadeus Mozart", coords: {lat: 47.7926, lng: 13.0029} };
 airports.waw = { name: "Warsaw Chopin", coords: {lat: 52.1672, lng: 20.9679} };
 airports.zrh = { name: "Zürich", coords: {lat: 47.4582, lng: 8.5555} };
+airports.bru = { name: "Brussels", coords: {lat: 50.9, lng: 4.4836} };
+airports.ams = { name: "Amsterdam Airport Schipol", coords: {lat: 52.31, lng: 4.7569} };
+airports.kef = { name: "Keflavík", coords: {lat: 63.9847, lng: -22.6055} };
 
 // asia
 airports.hkg = { name: "Hong Kong", coords: {lat: 22.3080, lng: 113.9185} };
@@ -299,43 +321,7 @@ function initMap() {
   map.setOptions({styles: retro});
 
   var paths = [
-                ["arn", "bos"],
-                ["arn", "hel"],
-                ["hel", "hkg"],
-                ["arn", "pek"],
-                ["pek", "hkg"],
-                ["sfo", "cph"],
-                ["cph", "arn"],
-                ["bos", "den"],
-                ["arn", "lhr"],
-                ["lhr", "iad"],
-                ["bos", "lgw"],
-                ["lgw", "arn"],
-                ["bos", "mia"],
-                ["bos", "sea"],
-                ["sea", "sfo"],
-                ["lax", "bos"],
-                ["arn", "jfk"],
-                ["nyo", "biq"],
-                ["arn", "zrh"],
-                ["zrh", "bos"],
-                ["arn", "cdg"],
-                ["cdg", "bos"],
-                ["arn", "ory"],
-                ["arn", "rmf"],
-                ["bma", "mmx"],
-                ["arn", "osl"],
-                ["arn", "got"],
-                ["arn", "ume"],
-                ["nyo", "lpa"],
-                ["arn", "fco"],
-                ["arn", "szg"],
-                ["arn", "waw"],
-                ["arn", "dub"],
-                ["nyo", "aja"],
-                ["mia", "mad"],
-                ["mad", "arn"],
-                ["cph", "lhr"]
+               
               ];
   for (var i=0; i < paths.length; i++) {
     newflight(paths[i]);
